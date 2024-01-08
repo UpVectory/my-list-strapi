@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       sites: [
         {
           name: 'my-list',
-          id: "cad62ecd-71e3-4d82-873d-4ec1514e475b",
+          id: process.env.NETLIFY_DEPLOYMENTS_ID,
           buildHook: "https://api.netlify.com/build_hooks/659bdd472f4c4e4724e1aaa5",
           branch: 'main' // optional
         }
